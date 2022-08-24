@@ -34,6 +34,10 @@ export default (editor, opts = {}) => {
     // Make all tooltip relative classes private
     privateClasses: 1,
 
+    // Panel & panel button used to toggle on the style manager
+    styleManagerPanel: 'views',
+    styleManagerBtn: 'open-sm',
+
     // Indicate if the tooltip can be styled. You can also pass an array
     // of which proprties can be styled. Eg. `['color', 'background-color']`
     stylableTooltip: [

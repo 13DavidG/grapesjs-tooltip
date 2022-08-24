@@ -16,6 +16,8 @@ export default (editor, opts = {}) => {
     stylableTooltip,
     showTooltipOnStyle,
     extendTraits,
+    styleManagerPanel,
+    styleManagerBtn,
   } = opts;
   const classTooltipBody = `${classTooltip}__body`;
   const classTooltipEmpty = `${classTooltip}--empty`;
@@ -209,9 +211,9 @@ export default (editor, opts = {}) => {
             type: 'button',
             full: 1,
             command: (editor, trait) => {
-              const openSm = editor.Panels.getButton('views', 'open-sm');
+              const openSm = editor.Panels.getButton(styleManagerPanel, styleManagerBtn);
               openSm && openSm.set('active', 1);
-              editor.StyleManager.setTarget(`.${classTooltipBody}`, {
+              editor.StyleManager.select(`.${classTooltipBody}`, {
                 targetIsClass: 1,
                 stylable: stylableTooltip,
               })

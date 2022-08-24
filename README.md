@@ -33,6 +33,8 @@ Simple, CSS only, tooltip component for GrapesJS
 | `privateClasses` | Make all tooltip relative classes private | `true` |
 | `showTooltipOnStyle` | If true, force the tooltip to be shown when you're styling it | `true` |
 | `stylableTooltip` | Indicate if the tooltip can be styled. You can also pass an array of which properties can be styled. Eg. `['color', 'background-color']` | `check the source...` |
+| `styleManagerBtn` | ID of the panel button used to toggle on the style manager | `'open-sm'` |
+| `styleManagerPanel` | ID of the panel of the panel button used to toggle on the style manager | `'views'` |
 
 
 
